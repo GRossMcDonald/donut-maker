@@ -40,7 +40,7 @@ document.querySelector("#reset").onclick = function () {
   price = 100;
   const donutTotal = document.querySelector("#donut-total");
   const autoclickerTotal = document.querySelector("#autoclicker-total");
-  document.querySelector("#price").innerText = price;
+  document.querySelector("#price").innerText = price + " Donuts";
   donutTotal.innerText = donutCounter + ": Donuts Made";
   autoclickerTotal.innerText = autoClickerCounter + ": Auto Clickers Purchased";
 }
