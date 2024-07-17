@@ -1,70 +1,72 @@
 header {
-    text-align: center;
-    background-color: #333;
-    margin: 0;
+  align-items: center;
+  background-color: #333;
+  margin: 0;
+  justify-content: space-between;
 }
 
 h1 {
-    color: #fafffd;
-    background-color: #33333379;
+  color: #fafffd;
+  background-color: #33333379;
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    font-size: 1.4em;
-    margin: 5;
-    color: #fafffd;
-    justify-content: center;
-    padding: 20px;
+  display: flex;
+  list-style: none;
+  font-size: 1.4em;
+  margin: 5;
+  color: #fafffd;
+  padding: 20px;
+  gap: 500px;
 }
 
 nav ul li {
-    padding: 10px;
+  padding: 10px;
 }
 
-#push-left {
-    padding-right: 300px;
+li a {
+  text-decoration: none;
+  color: #fafffd;
 }
 
-#push-right {
-    padding-left: 300px;
+li a:hover {
+  color: cornflowerblue;
 }
 
 body {
-    text-align: center;
-    justify-content: center;
-    background-color: #5a5a5a;
+  text-align: center;
+  justify-content: center;
+  background-color: #5a5a5a;
 }
 
 #increase-donuts {
-    background-color: transparent;
-    border: transparent;
-    cursor: pointer;
-    margin: 50px;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+  margin: 50px;
 }
 
 #increase-donuts.hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #buy-autoclicker {
-    height: 50px;
-    border-radius: 10px;
-    font-size: large;
+  height: 50px;
+  border-radius: 10px;
+  font-size: large;
 }
 
 #autoclicker-total {
-    font-size: 20px;
-    background-color: #33333379;
-    padding: 10px;
-    border-radius: 10px;
-    color: #fafffd;
+  font-size: 20px;
+  background-color: #33333379;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fafffd;
 }
 
 footer {
-    margin: 40px;
-    background-color: #33333379;
-    font: bold;
-    font-size: large;
+  margin: 40px;
+  background-color: #33333379;
+  font: bold;
+  font-size: large;
 }
