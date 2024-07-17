@@ -1,0 +1,70 @@
+header {
+    text-align: center;
+    background-color: #333;
+    margin: 0;
+}
+
+h1 {
+    color: #fafffd;
+    background-color: #33333379;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    font-size: 1.4em;
+    margin: 5;
+    color: #fafffd;
+    justify-content: center;
+    padding: 20px;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+#push-left {
+    padding-right: 300px;
+}
+
+#push-right {
+    padding-left: 300px;
+}
+
+body {
+    text-align: center;
+    justify-content: center;
+    background-color: #5a5a5a;
+}
+
+#increase-donuts {
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    margin: 50px;
+}
+
+#increase-donuts.hover {
+    cursor: pointer;
+}
+
+#buy-autoclicker {
+    height: 50px;
+    border-radius: 10px;
+    font-size: large;
+}
+
+#autoclicker-total {
+    font-size: 20px;
+    background-color: #33333379;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fafffd;
+}
+
+footer {
+    margin: 40px;
+    background-color: #33333379;
+    font: bold;
+    font-size: large;
+}

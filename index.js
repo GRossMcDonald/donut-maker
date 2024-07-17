@@ -1,10 +1,3 @@
-/*const container = (document.querySelector(".container").innerText =
-  "mmmmmmmmm doughnuts.... ahhhhhhh!");*/
-/**
- * No idea why this is present in project. Putting anything inside the div
- * will prevent anything else from displaying at all except the .innerText string value.
- */
-
 //TOTAL DONUT FUNCTION
 let donutCounter = 0;
 

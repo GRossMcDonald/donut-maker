@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Donut Clicker</title>
   </head>
   <body>
@@ -13,22 +14,21 @@
     <header>
       <nav>
         <ul>
-          <li>Fred the Baker Baking Company</li>
-          <li>The inspiration for this game, Cookie Clicker</li>
-          <li>Contact Info</li>
+          <li id="push-left">Fred the Baker Baking Company</li>
+          <li>Play the Original Here</li>
+          <li id="push-right">Contact Info</li>
         </ul>
       </nav>
     </header>
     <main>
       <div class="container-1">
+        <h1 id="donut-total">0: Donuts Made</h1>
         <!--Section should handle clicks-->
         <section id="click-handler">
           <button id="increase-donuts" type="submit">
             <!--BELOW TURNS BUTTON INTO IMAGE MIGHT USE LATER(?)-->
-            <!--<img src="images/DonutImage.png" alt="Donut Image" />-->
-            Click to Make Donuts
+            <img src="images/DonutImage.png" alt="Donut Image" />
           </button>
-          <span id="donut-total">0: Donuts Made</span>
         </section>
         <!--Section should handle auto clicker interactions-->
         <section>
