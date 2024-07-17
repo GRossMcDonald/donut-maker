@@ -23,7 +23,7 @@ document.querySelector("#buy-autoclicker").onclick = function () {
   if (donutCounter >= price) {
     autoClickerCounter++;
     donutCounter -= price;
-    price = Math.ceil(price * 1.1);
+    price = Math.floor(price * 1.1);
     document.querySelector("#price").innerText = price;
   }
   autoclickerTotal.innerText = autoClickerCounter + ": Auto Clickers Purchased";
@@ -39,4 +39,16 @@ setInterval(function () {
 
   donutCounter += autoClickerCounter;
 }, 1000);
+
+//RESET GAME
+document.querySelector("#reset").onclick = function () {
+  donutCounter = 0;
+  autoClickerCounter = 0;
+  price = 100;
+  const donutTotal = document.querySelector("#donut-total");
+  const autoclickerTotal = document.querySelector("#autoclicker-total");
+  document.querySelector("#price").innerText = price;
+  donutTotal.innerText = donutCounter + ": Donuts Made";
+  autoclickerTotal.innerText = autoClickerCounter + ": Auto Clickers Purchased";
+}
 
