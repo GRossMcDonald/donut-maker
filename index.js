@@ -24,6 +24,7 @@ document.querySelector("#buy-autoclicker").onclick = function () {
     autoClickerCounter++;
     donutCounter -= price;
     price = Math.ceil(price * 1.1);
+    document.querySelector("#price").innerText = price;
   }
   autoclickerTotal.innerText = autoClickerCounter + ": Auto Clickers Purchased";
   const donutTotal = document.querySelector("#donut-total");
