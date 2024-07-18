@@ -19,6 +19,7 @@ document.querySelector("#buy-autoclicker").onclick = function () {
     price = Math.floor(price * 1.1);
     document.querySelector("#price").innerText = price;
   }
+
   const autoClickerTotal = document.querySelector("#autoclicker-total");
   autoClickerTotal.innerText = autoClickerCounter + ": Auto Clickers Purchased";
 
@@ -40,13 +41,13 @@ document.querySelector("#reset").onclick = function () {
   donutCounter = 0;
   price = 100;
 
-  const autoClickerPrice = document.querySelector("#price");
-  autoClickerPrice.innerText = price + " Donuts";
+  const autoClickerTotal = document.querySelector("#autoclicker-total");
+  autoClickerTotal.innerText = autoClickerCounter + ": Auto Clickers Purchased";
 
   const donutTotal = document.querySelector("#donut-total");
   donutTotal.innerText = donutCounter + ": Donuts Made";
 
-  const autoClickerTotal = document.querySelector("#autoclicker-total");
-  autoClickerTotal.innerText = autoClickerCounter + ": Auto Clickers Purchased";
+  const autoClickerPrice = document.querySelector("#price");
+  autoClickerPrice.innerText = price + " Donuts";
 }
 
