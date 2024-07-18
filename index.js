@@ -5,43 +5,48 @@ let price = 100;
 
 //TOTAL DONUT FUNCTION
 document.querySelector("#increase-donuts").onclick = function () {
-  const donutTotal = document.querySelector("#donut-total");
   donutCounter++;
+
+  const donutTotal = document.querySelector("#donut-total");
   donutTotal.innerText = donutCounter + ": Donuts Made";
 };
 
 //AUTOCLICKER PURCHASE FUNCTION
 document.querySelector("#buy-autoclicker").onclick = function () {
-  const autoclickerTotal = document.querySelector("#autoclicker-total");
   if (donutCounter >= price) {
     autoClickerCounter++;
     donutCounter -= price;
     price = Math.floor(price * 1.1);
     document.querySelector("#price").innerText = price;
   }
-  autoclickerTotal.innerText = autoClickerCounter + ": Auto Clickers Purchased";
+  const autoClickerTotal = document.querySelector("#autoclicker-total");
+  autoClickerTotal.innerText = autoClickerCounter + ": Auto Clickers Purchased";
+
   const donutTotal = document.querySelector("#donut-total");
   donutTotal.innerText = donutCounter + ": Donuts Made";
 };
 
 //AUTOCLICKER PRODUCTION FUNCTION
 setInterval(function () {
-  const donutTotal = document.querySelector("#donut-total");
-
-  donutTotal.innerText = donutCounter + ": Donuts Made";
-
   donutCounter += autoClickerCounter;
+
+  const donutTotal = document.querySelector("#donut-total");
+  donutTotal.innerText = donutCounter + ": Donuts Made";
 }, 1000);
 
 //RESET GAME
 document.querySelector("#reset").onclick = function () {
-  donutCounter = 0;
   autoClickerCounter = 0;
+  donutCounter = 0;
   price = 100;
+
+  const autoClickerPrice = document.querySelector("#price");
+  autoClickerPrice.innerText = price + " Donuts";
+
   const donutTotal = document.querySelector("#donut-total");
-  const autoclickerTotal = document.querySelector("#autoclicker-total");
-  document.querySelector("#price").innerText = price + " Donuts";
   donutTotal.innerText = donutCounter + ": Donuts Made";
-  autoclickerTotal.innerText = autoClickerCounter + ": Auto Clickers Purchased";
+
+  const autoClickerTotal = document.querySelector("#autoclicker-total");
+  autoClickerTotal.innerText = autoClickerCounter + ": Auto Clickers Purchased";
 }
 
