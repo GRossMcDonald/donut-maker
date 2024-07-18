@@ -1,6 +1,9 @@
-//TOTAL DONUT FUNCTION
+//VARIABLES
 let donutCounter = 0;
+let autoClickerCounter = 0;
+let price = 100;
 
+//TOTAL DONUT FUNCTION
 document.querySelector("#increase-donuts").onclick = function () {
   const donutTotal = document.querySelector("#donut-total");
   donutCounter++;
@@ -8,9 +11,6 @@ document.querySelector("#increase-donuts").onclick = function () {
 };
 
 //AUTOCLICKER PURCHASE FUNCTION
-let autoClickerCounter = 0;
-let price = 100;
-
 document.querySelector("#buy-autoclicker").onclick = function () {
   const autoclickerTotal = document.querySelector("#autoclicker-total");
   if (donutCounter >= price) {
